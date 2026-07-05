@@ -1,33 +1,69 @@
 # ── 논문 목록 ──────────────────────────────────────
 # 최신 논문을 맨 위에 추가하세요. year 기준으로 자동 그룹화됩니다.
-# 저자 중 우리 연구실 인원은 굵게 표시하고 싶으면 **이름** 처럼 별표로 감싸세요.
+# 저자 중 우리 연구실 인원은 **이름** 처럼 별표 2개로 감싸면 굵게 표시됩니다.
+# type: 국제저널 / 국제학술대회 / 국제워크숍 / 국내학술대회 / 국내저널
 # link: 논문 원문/DOI 링크 (없으면 빈 문자열 "")
 
-- title: "An Efficient Register Allocation Scheme for AI Compilers"
-  authors: "**Gildong Hong**, **Hyuk Woo Park**"
-  venue: "ACM SIGPLAN PLDI"
-  year: 2026
-  type: "국제학술대회"
-  link: ""
+- title: "Tail Call Optimization Tailored for Native Stack Utilization in JavaScript Runtimes"
+  authors: "**Hyukwoo Park** and Seonghyun Kim"
+  venue: "IEEE Access, vol. 12, pp. 111801–111817, Aug. 2024"
+  year: 2024
+  type: "국제저널"
+  link: "https://doi.org/10.1109/access.2024.3441750"
 
-- title: "Profile-Guided Optimization for Modern Web Engines"
-  authors: "**Cheolsu Kim**, **Hyuk Woo Park**"
-  venue: "IEEE/ACM CGO"
-  year: 2025
-  type: "국제학술대회"
-  link: ""
+- title: "Dynamic code compression for JavaScript engine"
+  authors: "**Hyukwoo Park**, Seonghyun Kim, and Boram Bae"
+  venue: "Software: Practice and Experience, vol. 53, issue 5, pp. 1196–1217, Feb. 2023"
+  year: 2023
+  type: "국제저널"
+  link: "https://doi.org/10.1002/spe.3186"
 
-- title: "웹 엔진을 위한 JIT 컴파일 최적화 기법"
-  authors: "**이영희**, **박혁우**"
-  venue: "한국정보과학회 학술발표회 (KSC)"
-  year: 2025
-  type: "국내학술대회"
+- title: "Reusing the Optimized Code for JavaScript Ahead-of-Time Compilation"
+  authors: "**Hyukwoo Park**, Sungkook Kim, Jung-Geun Park, and Soo-Mook Moon"
+  venue: "ACM Transactions on Architecture and Code Optimization (TACO), vol. 15, issue 4, pp. 1–20, Dec. 2018"
+  year: 2018
+  type: "국제저널"
+  link: "https://doi.org/10.1145/3291056"
+
+- title: "Advanced ahead-of-time compilation for Javascript engine"
+  authors: "**Hyukwoo Park**, Sungkook Kim, and Soo-Mook Moon"
+  venue: "Proceedings of the 2017 International Conference on Compilers, Architectures and Synthesis for Embedded Systems (CASES '17) Companion, Oct. 2017"
+  year: 2017
+  type: "국제학술대회"
+  link: "https://doi.org/10.1145/3125501.3125512"
+
+- title: "Concurrent JavaScript Parsing for Faster Loading of Web Apps"
+  authors: "**Hyukwoo Park**, Myungsu Cha, and Soo-Mook Moon"
+  venue: "ACM Transactions on Architecture and Code Optimization (TACO), vol. 13, issue 4, pp. 1–24, Nov. 2016"
+  year: 2016
+  type: "국제저널"
+  link: "https://doi.org/10.1145/3004281"
+
+- title: "Javascript ahead-of-time compilation for embedded web platform"
+  authors: "**Hyukwoo Park**, Wonki Jung, and Soo-Mook Moon"
+  venue: "2015 13th IEEE Symposium on Embedded Systems For Real-time Multimedia (ESTIMedia), Oct. 2015"
+  year: 2015
+  type: "국제학술대회"
+  link: "https://doi.org/10.1109/estimedia.2015.7351768"
+
+- title: "Migration of Web Applications with Seamless Execution"
+  authors: "JinSeok Oh, Jin-woo Kwon, **Hyukwoo Park**, and Soo-Mook Moon"
+  venue: "Proceedings of the 11th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (VEE '15), pp. 173–185, Mar. 2015"
+  year: 2015
+  type: "국제학술대회"
+  link: "https://doi.org/10.1145/2731186.2731197"
+
+- title: "Biased Allocator for Generational Garbage Collector"
+  authors: "Hyung-Kyu Choi, **Hyukwoo Park**, and Soo-Mook Moon"
+  venue: "3rd International Workshop on Dynamic Compilation Everywhere (DCE), 2014"
+  year: 2014
+  type: "국제워크숍"
   link: ""
 
 # ── 새 논문 추가 예시 (주석 해제 후 사용) ──
 # - title: "논문 제목"
 #   authors: "**우리연구실저자**, 공동저자"
-#   venue: "학회/저널명"
+#   venue: "학회/저널명, vol., pp., 월 연도"
 #   year: 2026
-#   type: "국제학술대회"   # 국제학술대회 / 국내학술대회 / 국제저널 / 국내저널
+#   type: "국제학술대회"
 #   link: "https://doi.org/..."
