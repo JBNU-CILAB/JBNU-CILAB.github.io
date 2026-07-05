@@ -29,6 +29,42 @@ permalink: /people/
         <p class="pi-en">{{ site.pi.name_en }}</p>
         <p class="pi-title">{{ site.pi.title }}</p>
         <p><a href="mailto:{{ site.pi.email }}">{{ site.pi.email }}</a></p>
+        <p class="pi-interests"><strong>연구 관심 분야</strong> · {{ site.data.professor.interests }}</p>
+        {% assign has_links = false %}
+        {% for l in site.data.professor.links %}{% if l.url != "" %}{% assign has_links = true %}{% endif %}{% endfor %}
+        {% if has_links %}
+        <div class="pi-links">
+          {% for l in site.data.professor.links %}
+            {% if l.url != "" %}<a class="pi-link" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.name }}</a>{% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- 학력 / 경력 -->
+    <div class="pi-details">
+      <div class="pi-block">
+        <h4>학력 · Education</h4>
+        <ul>
+          {% for e in site.data.professor.education %}
+          <li>
+            <span class="d-main"><strong>{{ e.degree }}</strong> — {{ e.detail }}</span>
+            <span class="d-period">{{ e.period }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="pi-block">
+        <h4>경력 · Experience</h4>
+        <ul>
+          {% for c in site.data.professor.career %}
+          <li>
+            <span class="d-main"><strong>{{ c.position }}</strong> — {{ c.org }}</span>
+            <span class="d-period">{{ c.period }}</span>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
 

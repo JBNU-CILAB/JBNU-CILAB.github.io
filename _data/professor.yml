@@ -1,0 +1,30 @@
+# ── 지도교수 상세 정보 ─────────────────────────────
+# People 페이지의 교수 소개 영역에 표시됩니다.
+# 기본 정보(이름·이메일·사진)는 _config.yml 의 pi: 항목에서 관리합니다.
+
+interests: "웹 엔진 (JavaScript 엔진), WebAssembly, 컴파일러 최적화"
+
+education:
+  - degree: "박사 (Ph.D.)"
+    detail: "서울대학교 전기·컴퓨터공학부"
+    period: "2012 – 2018"
+  - degree: "석사 (M.S.)"
+    detail: "서울대학교 전기·컴퓨터공학부"
+    period: "2010 – 2012"
+  - degree: "학사 (B.S.)"
+    detail: "서울대학교 전기공학부"
+    period: "2006 – 2010"
+
+career:
+  - position: "조교수"
+    org: "전북대학교 컴퓨터인공지능학부 — Compiler Intelligence Lab (CILAB) 설립·운영"
+    period: "2025.03 – 현재"
+  - position: "연구원"
+    org: "삼성리서치 (Samsung Research) — 경량 웹 엔진 Escargot / Walrus 개발 및 최적화"
+    period: "2018 – 2025"
+
+# 외부 프로필 링크 (url 을 채우면 자동으로 버튼이 표시됩니다)
+links:
+  - { name: "GitHub",         url: "https://github.com/clover2123" }
+  - { name: "Google Scholar", url: "https://scholar.google.com/citations?user=3PUM8NQAAAAJ" }
+  - { name: "ORCID",          url: "https://orcid.org/0000-0002-8525-0652" }
