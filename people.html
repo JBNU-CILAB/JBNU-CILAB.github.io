@@ -43,34 +43,6 @@ permalink: /people/
       </div>
     </div>
 
-    <!-- 학력 / 경력 -->
-    <div class="pi-details">
-      <div class="pi-block">
-        <h4>학력 · Education</h4>
-        <ul>
-          {% for e in site.data.professor.education %}
-          <li>
-            <span class="d-title">{{ e.degree }}</span>
-            <span class="d-org">{{ e.detail }}</span>
-            <span class="d-period">{{ e.period }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="pi-block">
-        <h4>경력 · Experience</h4>
-        <ul>
-          {% for c in site.data.professor.career %}
-          <li>
-            <span class="d-title">{{ c.position }}</span>
-            <span class="d-org">{{ c.org }}</span>
-            <span class="d-period">{{ c.period }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-
     <!-- 학생 그룹별 -->
     {% assign groups = "phd,ms,undergrad,alumni" | split: "," %}
     {% assign labels = "박사과정 · Ph.D. Students,석사과정 · M.S. Students,학부연구생 · Undergraduate,졸업생 · Alumni" | split: "," %}

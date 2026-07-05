@@ -80,7 +80,10 @@ permalink: /people/professor/
       <ul>
         {% for t in site.data.professor.presentations %}
         <li>
-          <span class="d-title">“{{ t.title }}”</span>
+          <span class="d-title">
+            {% if t.link and t.link != "" %}<a href="{{ t.link }}" target="_blank" rel="noopener">“{{ t.title }}” ↗</a>
+            {% else %}“{{ t.title }}”{% endif %}
+          </span>
           <span class="d-org">{{ t.venue }}</span>
           <span class="d-period">{{ t.date }}</span>
         </li>
