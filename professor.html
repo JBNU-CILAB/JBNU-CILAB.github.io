@@ -1,0 +1,96 @@
+---
+layout: default
+title: Professor
+permalink: /people/professor/
+---
+
+<div class="page-head">
+  <div class="container">
+    <span class="eyebrow">People · Professor</span>
+    <h1>{{ site.pi.name_ko }} <span class="head-en">{{ site.pi.name_en }}</span></h1>
+    <p class="lead">{{ site.pi.title }} · {{ site.lab.university }} {{ site.lab.department }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <!-- 프로필 카드 -->
+    <div class="pi-card">
+      {% assign pi_photo = '/assets/img/' | append: site.pi.photo | relative_url %}
+      {% if site.pi.photo and site.pi.photo != "" %}
+        <img class="avatar" src="{{ pi_photo }}" alt="{{ site.pi.name_ko }}"
+             onerror="this.outerHTML='<div class=\'avatar-fallback\'>{{ site.pi.name_en | slice: 0 }}</div>'">
+      {% else %}
+        <div class="avatar-fallback">{{ site.pi.name_en | slice: 0 }}</div>
+      {% endif %}
+      <div class="pi-info">
+        <h3>{{ site.pi.name_ko }}</h3>
+        <p class="pi-en">{{ site.pi.name_en }}</p>
+        <p class="pi-title">{{ site.pi.title }}</p>
+        <p>
+          <a href="mailto:{{ site.pi.email }}">{{ site.pi.email }}</a><br>
+          {{ site.contact.phone }}
+        </p>
+        <div class="pi-links">
+          {% for l in site.data.professor.links %}
+            {% if l.url != "" %}<a class="pi-link" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.name }}</a>{% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <!-- 소개 -->
+    <div class="pi-bio">
+      <p>{{ site.data.professor.bio }}</p>
+      <p class="pi-interests"><strong>연구 관심 분야</strong> · {{ site.data.professor.interests }}</p>
+    </div>
+
+    <!-- 학력 / 경력 -->
+    <div class="pi-details">
+      <div class="pi-block">
+        <h4>학력 · Education</h4>
+        <ul>
+          {% for e in site.data.professor.education %}
+          <li>
+            <span class="d-title">{{ e.degree }}</span>
+            <span class="d-org">{{ e.detail }}</span>
+            <span class="d-period">{{ e.period }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="pi-block">
+        <h4>경력 · Experience</h4>
+        <ul>
+          {% for c in site.data.professor.career %}
+          <li>
+            <span class="d-title">{{ c.position }}</span>
+            <span class="d-org">{{ c.org }}</span>
+            <span class="d-period">{{ c.period }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <!-- 초청 발표 -->
+    {% if site.data.professor.presentations and site.data.professor.presentations.size > 0 %}
+    <div class="pi-block pi-block-wide">
+      <h4>초청 발표 · Invited Talks</h4>
+      <ul>
+        {% for t in site.data.professor.presentations %}
+        <li>
+          <span class="d-title">“{{ t.title }}”</span>
+          <span class="d-org">{{ t.venue }}</span>
+          <span class="d-period">{{ t.date }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <div class="btn-row">
+      <a class="btn btn-ghost" href="{{ '/people/' | relative_url }}">← 구성원 목록으로</a>
+    </div>
+  </div>
+</section>

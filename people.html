@@ -25,7 +25,7 @@ permalink: /people/
         <div class="avatar-fallback">{{ site.pi.name_en | slice: 0 }}</div>
       {% endif %}
       <div class="pi-info">
-        <h3>{{ site.pi.name_ko }}</h3>
+        <h3><a class="pi-name-link" href="{{ '/people/professor/' | relative_url }}">{{ site.pi.name_ko }}</a></h3>
         <p class="pi-en">{{ site.pi.name_en }}</p>
         <p class="pi-title">{{ site.pi.title }}</p>
         <p><a href="mailto:{{ site.pi.email }}">{{ site.pi.email }}</a></p>
@@ -39,6 +39,7 @@ permalink: /people/
           {% endfor %}
         </div>
         {% endif %}
+        <p class="pi-more"><a href="{{ '/people/professor/' | relative_url }}">상세 프로필 보기 →</a></p>
       </div>
     </div>
 

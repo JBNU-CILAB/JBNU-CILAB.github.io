@@ -2,7 +2,24 @@
 # People 페이지의 교수 소개 영역에 표시됩니다.
 # 기본 정보(이름·이메일·사진)는 _config.yml 의 pi: 항목에서 관리합니다.
 
-interests: "웹 엔진 (JavaScript 엔진), WebAssembly, 컴파일러 최적화"
+interests: "웹 엔진 (JavaScript, WebAssembly 엔진), AI 컴파일러, LLM 활용 컴파일러 최적화"
+
+# 소개문 (교수 상세 페이지 상단에 표시)
+bio: >
+  박혁우 교수는 서울대학교에서 웹 엔진(특히 JavaScript 엔진)을 주제로 박사 학위를 받았으며,
+  박사 과정 동안 다양한 최적화 기법을 연구·개발했습니다.
+  2018년 박사 학위 취득 후 삼성리서치(Samsung Research)에 합류하여
+  경량 웹 엔진 Escargot 및 Walrus 프로젝트의 개발과 최적화를 수행했습니다.
+  2025년 3월 전북대학교에 부임하여 컴파일러 인텔리전스 연구실(CILAB)을 운영하고 있습니다.
+
+# 초청 발표 / 강연
+presentations:
+  - title: "What's new in Tizen?"
+    venue: "Samsung Developer Conference 2024, San Jose McEnery Convention Center, USA"
+    date: "Oct. 2024"
+  - title: "What is WebAssembly?"
+    venue: "BK21 초청 세미나, 서울대학교"
+    date: "Jan. 2023"
 
 education:
   - degree: "박사 (Ph.D.)"
@@ -17,7 +34,7 @@ education:
 
 career:
   - position: "조교수"
-    org: "전북대학교 컴퓨터인공지능학부 — Compiler Intelligence Lab (CILAB) 설립·운영"
+    org: "전북대학교 컴퓨터인공지능학부 — Compiler Intelligence Lab (CILAB) 운영"
     period: "2025.03 – 현재"
   - position: "연구원"
     org: "삼성리서치 (Samsung Research) — 경량 웹 엔진 Escargot / Walrus 개발 및 최적화"

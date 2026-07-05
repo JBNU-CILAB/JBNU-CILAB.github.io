@@ -166,6 +166,18 @@ h2.section-title { font-size: 26px; margin: 0 0 28px; letter-spacing: -.3px; }
 .pi-info .pi-title { color: var(--accent); font-weight: 600; }
 
 /* PI 상세 (연구분야·링크·학력·경력) */
+.head-en { font-size: .55em; font-weight: 500; color: var(--text-muted); margin-left: 8px; }
+.pi-name-link { color: var(--text); }
+.pi-name-link:hover { color: var(--accent); text-decoration: none; }
+.pi-more { margin-top: 12px; font-size: 14.5px; font-weight: 600; }
+.pi-bio {
+  margin-top: 20px; padding: 24px 28px;
+  background: var(--bg-alt); border-radius: var(--radius);
+  word-break: keep-all;
+}
+.pi-bio p { margin: 0 0 10px; }
+.pi-bio p:last-child { margin-bottom: 0; }
+.pi-block-wide { margin-top: 20px; }
 .pi-interests { font-size: 14.5px; color: var(--text-muted); margin-top: 10px; word-break: keep-all; }
 .pi-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .pi-link {
