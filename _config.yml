@@ -49,3 +49,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - vendor          # bundler-cache 가 gem 을 설치하는 위치 (빌드 대상에서 제외 필수)
+  - .github
+  - _preview
+  - scratchpad
