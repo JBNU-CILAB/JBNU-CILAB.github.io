@@ -28,7 +28,7 @@ permalink: /people/
         <h3><a class="pi-name-link" href="{{ '/people/professor/' | relative_url }}">{{ site.pi.name_ko }}</a></h3>
         <p class="pi-en">{{ site.pi.name_en }}</p>
         <p class="pi-title">{{ site.pi.title }}</p>
-        <p><a href="mailto:{{ site.pi.email }}">{{ site.pi.email }}</a></p>
+        <p>{% include email.html address=site.pi.email %}</p>
         <p class="pi-interests"><strong>연구 관심 분야</strong> · {{ site.data.professor.interests }}</p>
         {% assign has_links = false %}
         {% for l in site.data.professor.links %}{% if l.url != "" %}{% assign has_links = true %}{% endif %}{% endfor %}
@@ -63,7 +63,7 @@ permalink: /people/
             <div class="m-name-en">{{ m.name_en }}</div>
             <div class="m-role">{{ m.role }}</div>
             {% if m.interests %}<div class="m-interest">{{ m.interests }}</div>{% endif %}
-            {% if m.email and m.email != "" %}<div class="m-email"><a href="mailto:{{ m.email }}">{{ m.email }}</a></div>{% endif %}
+            {% if m.email and m.email != "" %}<div class="m-email">{% include email.html address=m.email %}</div>{% endif %}
           </div>
           {% endfor %}
         </div>

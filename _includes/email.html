@@ -1,0 +1,11 @@
+{% comment %}
+  이메일 크롤링 방지용 컴포넌트 (JS 조립 방식).
+  HTML 소스에는 완성된 주소/mailto 링크가 존재하지 않으며,
+  페이지 로드 후 JS(_layouts/default.html)가 조립합니다.
+
+  사용법:
+    {% include email.html address=site.pi.email %}                          ← 주소 자체를 링크 텍스트로 표시
+    {% include email.html address=site.pi.email class="btn" label="문의" %} ← 커스텀 버튼/문구
+{% endcomment %}
+{%- assign _p = include.address | split: "@" -%}
+<a class="eml{% if include.class %} {{ include.class }}{% endif %}" data-u="{{ _p[0] }}" data-d="{{ _p[1] }}">{{ include.label }}</a>

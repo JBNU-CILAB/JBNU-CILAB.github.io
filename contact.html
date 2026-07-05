@@ -26,7 +26,7 @@ permalink: /contact/
         </div>
         <div class="info-row">
           <span class="k">이메일</span>
-          <span><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></span>
+          <span>{% include email.html address=site.contact.email %}</span>
         </div>
         <div class="info-row">
           <span class="k">지도교수</span>
@@ -77,7 +77,7 @@ permalink: /contact/
     </div>
 
     <div class="btn-row">
-      <a class="btn btn-primary" href="mailto:{{ site.pi.email }}">✉️ 이메일로 자기소개 보내기</a>
+      {% include email.html address=site.pi.email class="btn btn-primary" label="✉️ 이메일로 자기소개 보내기" %}
     </div>
   </div>
 </section>

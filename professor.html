@@ -28,7 +28,7 @@ permalink: /people/professor/
         <p class="pi-en">{{ site.pi.name_en }}</p>
         <p class="pi-title">{{ site.pi.title }}</p>
         <p>
-          <a href="mailto:{{ site.pi.email }}">{{ site.pi.email }}</a><br>
+          {% include email.html address=site.pi.email %}<br>
           {{ site.contact.phone }}
         </p>
         <div class="pi-links">
