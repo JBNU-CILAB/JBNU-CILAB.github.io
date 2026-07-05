@@ -4,6 +4,20 @@
 # type: 국제저널 / 국제학술대회 / 국제워크숍 / 국내학술대회 / 국내저널
 # link: 논문 원문/DOI 링크 (없으면 빈 문자열 "")
 
+- title: "듀얼 패스 프롬프트와 후처리 필터링을 이용한 고품질 JS 엔진 코드 리뷰 시스템"
+  authors: "**이재헌** and **박혁우**"
+  venue: "한국정보과학회 2025 한국소프트웨어종합학술대회 논문집 (KSC 2025), pp. 1485–1487, Dec. 2025"
+  year: 2025
+  type: "국내학술대회"
+  link: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12577935"
+
+- title: "미사용 함수 파라미터 제거를 활용한 자바스크립트 엔진 최적화"
+  authors: "**권순범** and **박혁우**"
+  venue: "한국정보과학회 2025 한국소프트웨어종합학술대회 논문집 (KSC 2025), pp. 1049–1051, Dec. 2025"
+  year: 2025
+  type: "국내학술대회"
+  link: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12577711"
+
 - title: "Tail Call Optimization Tailored for Native Stack Utilization in JavaScript Runtimes"
   authors: "**Hyukwoo Park** and Seonghyun Kim"
   venue: "IEEE Access, vol. 12, pp. 111801–111817, Aug. 2024"
