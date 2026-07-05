@@ -20,7 +20,7 @@ lab:
 # 지도교수
 pi:
   name_ko: "박혁우"
-  name_en: "Hyuk Woo Park"
+  name_en: "Hyukwoo Park"
   title: "지도교수 / Principal Investigator"
   email: "hyukwoo.park@jbnu.ac.kr"
   photo: "professor.jpg"   # assets/img/ 안에 이미지 파일을 넣으세요
