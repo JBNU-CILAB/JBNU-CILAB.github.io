@@ -1,0 +1,22 @@
+# ── 연구 프로젝트 ──────────────────────────────────
+# 진행 중/완료된 연구 과제를 적습니다.
+# status: ongoing (진행중) / completed (완료)
+
+- title: "AI 컴파일러 최적화 프레임워크 개발"
+  period: "2024 ~ 현재"
+  status: ongoing
+  funder: "한국연구재단 (NRF)"
+  summary: "딥러닝 모델을 다양한 하드웨어에 효율적으로 컴파일하기 위한 최적화 기법 연구."
+
+- title: "차세대 웹 엔진 성능 최적화"
+  period: "2023 ~ 2025"
+  status: ongoing
+  funder: "정보통신기획평가원 (IITP)"
+  summary: "웹 브라우저 자바스크립트 엔진의 JIT 컴파일 및 실행 성능 향상 연구."
+
+# ── 새 프로젝트 추가 예시 ──
+# - title: "프로젝트 제목"
+#   period: "2026 ~ 2028"
+#   status: ongoing
+#   funder: "지원기관"
+#   summary: "프로젝트 한 줄 요약."

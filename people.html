@@ -1,0 +1,62 @@
+---
+layout: default
+title: People
+permalink: /people/
+---
+
+<div class="page-head">
+  <div class="container">
+    <span class="eyebrow">People</span>
+    <h1>구성원</h1>
+    <p class="lead">컴파일러 인텔리전스 연구실을 함께 만들어가는 사람들입니다.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <!-- 지도교수 -->
+    <div class="group-title">지도교수 · Professor</div>
+    <div class="pi-card">
+      {% assign pi_photo = '/assets/img/' | append: site.pi.photo | relative_url %}
+      {% if site.pi.photo and site.pi.photo != "" %}
+        <img class="avatar" src="{{ pi_photo }}" alt="{{ site.pi.name_ko }}"
+             onerror="this.outerHTML='<div class=\'avatar-fallback\'>{{ site.pi.name_en | slice: 0 }}</div>'">
+      {% else %}
+        <div class="avatar-fallback">{{ site.pi.name_en | slice: 0 }}</div>
+      {% endif %}
+      <div class="pi-info">
+        <h3>{{ site.pi.name_ko }}</h3>
+        <p class="pi-en">{{ site.pi.name_en }}</p>
+        <p class="pi-title">{{ site.pi.title }}</p>
+        <p><a href="mailto:{{ site.pi.email }}">{{ site.pi.email }}</a></p>
+      </div>
+    </div>
+
+    <!-- 학생 그룹별 -->
+    {% assign groups = "phd,ms,undergrad,alumni" | split: "," %}
+    {% assign labels = "박사과정 · Ph.D. Students,석사과정 · M.S. Students,학부연구생 · Undergraduate,졸업생 · Alumni" | split: "," %}
+    {% for g in groups %}
+      {% assign members = site.data.members | where: "group", g %}
+      {% if members.size > 0 %}
+        <div class="group-title">{{ labels[forloop.index0] }}</div>
+        <div class="grid grid-4">
+          {% for m in members %}
+          <div class="member">
+            {% if m.photo and m.photo != "" %}
+              <img class="avatar" src="{{ '/assets/img/members/' | append: m.photo | relative_url }}" alt="{{ m.name_ko }}"
+                   onerror="this.outerHTML='<div class=\'avatar-fallback\'>{{ m.name_en | slice: 0 }}</div>'">
+            {% else %}
+              <div class="avatar-fallback">{{ m.name_en | slice: 0 }}</div>
+            {% endif %}
+            <div class="m-name">{{ m.name_ko }}</div>
+            <div class="m-name-en">{{ m.name_en }}</div>
+            <div class="m-role">{{ m.role }}</div>
+            {% if m.interests %}<div class="m-interest">{{ m.interests }}</div>{% endif %}
+            {% if m.email and m.email != "" %}<div class="m-email"><a href="mailto:{{ m.email }}">{{ m.email }}</a></div>{% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

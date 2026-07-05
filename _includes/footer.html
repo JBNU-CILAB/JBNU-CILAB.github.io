@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <strong>{{ site.lab.name_ko }}</strong>
+      <span>{{ site.lab.name_en }}</span>
+    </div>
+    <div class="footer-contact">
+      <span>{{ site.contact.address_ko }}</span>
+      <span>{{ site.contact.phone }} · <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></span>
+    </div>
+    <div class="footer-copy">
+      © {{ 'now' | date: "%Y" }} {{ site.lab.name_en }}. All rights reserved.
+    </div>
+  </div>
+</footer>

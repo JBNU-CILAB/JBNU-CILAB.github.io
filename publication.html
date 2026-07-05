@@ -1,0 +1,35 @@
+---
+layout: default
+title: Publication
+permalink: /publication/
+---
+
+<div class="page-head">
+  <div class="container">
+    <span class="eyebrow">Publication</span>
+    <h1>논문</h1>
+    <p class="lead">연구실에서 발표한 학술 논문 목록입니다. (연구실 저자는 굵게 표시)</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    {% assign by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+    {% for yr in by_year %}
+      <div class="pub-year">{{ yr.name }}</div>
+      {% for p in yr.items %}
+      <div class="pub-item">
+        <p class="pub-title">
+          {% if p.link and p.link != "" %}<a href="{{ p.link }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+          {% if p.type %}<span class="pub-badge">{{ p.type }}</span>{% endif %}
+        </p>
+        <p class="pub-authors">
+          {% assign parts = p.authors | split: "**" %}
+          {% for part in parts %}{% assign mod = forloop.index0 | modulo: 2 %}{% if mod == 1 %}<strong>{{ part }}</strong>{% else %}{{ part }}{% endif %}{% endfor %}
+        </p>
+        <p class="pub-venue"><span class="venue-name">{{ p.venue }}</span></p>
+      </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</section>

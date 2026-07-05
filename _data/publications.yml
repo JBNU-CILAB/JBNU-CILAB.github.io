@@ -1,0 +1,33 @@
+# ── 논문 목록 ──────────────────────────────────────
+# 최신 논문을 맨 위에 추가하세요. year 기준으로 자동 그룹화됩니다.
+# 저자 중 우리 연구실 인원은 굵게 표시하고 싶으면 **이름** 처럼 별표로 감싸세요.
+# link: 논문 원문/DOI 링크 (없으면 빈 문자열 "")
+
+- title: "An Efficient Register Allocation Scheme for AI Compilers"
+  authors: "**Gildong Hong**, **Hyuk Woo Park**"
+  venue: "ACM SIGPLAN PLDI"
+  year: 2026
+  type: "국제학술대회"
+  link: ""
+
+- title: "Profile-Guided Optimization for Modern Web Engines"
+  authors: "**Cheolsu Kim**, **Hyuk Woo Park**"
+  venue: "IEEE/ACM CGO"
+  year: 2025
+  type: "국제학술대회"
+  link: ""
+
+- title: "웹 엔진을 위한 JIT 컴파일 최적화 기법"
+  authors: "**이영희**, **박혁우**"
+  venue: "한국정보과학회 학술발표회 (KSC)"
+  year: 2025
+  type: "국내학술대회"
+  link: ""
+
+# ── 새 논문 추가 예시 (주석 해제 후 사용) ──
+# - title: "논문 제목"
+#   authors: "**우리연구실저자**, 공동저자"
+#   venue: "학회/저널명"
+#   year: 2026
+#   type: "국제학술대회"   # 국제학술대회 / 국내학술대회 / 국제저널 / 국내저널
+#   link: "https://doi.org/..."

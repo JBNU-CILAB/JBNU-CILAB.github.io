@@ -1,0 +1,51 @@
+# ── 사이트 전역 설정 ───────────────────────────────
+# 이 파일의 값만 바꾸면 사이트 전반의 정보가 함께 바뀝니다.
+
+title: "CILAB"
+subtitle: "Compiler Intelligence Lab"
+description: "전북대학교 컴파일러 인텔리전스 연구실 — 컴파일러 최적화, 웹 엔진, AI 컴파일러"
+lang: ko
+
+# 배포 주소 (org 대표 사이트이므로 baseurl은 비워둡니다)
+url: "https://jbnu-cilab.github.io"
+baseurl: ""
+
+# 연구실 기본 정보
+lab:
+  name_ko: "컴파일러 인텔리전스 연구실"
+  name_en: "Compiler Intelligence Lab (CILAB)"
+  university: "전북대학교"
+  department: "컴퓨터인공지능학부"
+
+# 지도교수
+pi:
+  name_ko: "박혁우"
+  name_en: "Hyuk Woo Park"
+  title: "지도교수 / Principal Investigator"
+  email: "hyukwoo.park@jbnu.ac.kr"
+  photo: "professor.jpg"   # assets/img/ 안에 이미지 파일을 넣으세요
+
+# 연락처
+contact:
+  address_ko: "전라북도 전주시 덕진구 백제대로 567 전북대학교 공과대학 7호관 533호"
+  address_detail: "컴퓨터인공지능학부 [54896]"
+  phone: "(063) 270-3437"
+  email: "hyukwoo.park@jbnu.ac.kr"
+
+# 상단 네비게이션 메뉴 (순서대로 표시됩니다)
+nav:
+  - { name: "Home",        url: "/" }
+  - { name: "People",      url: "/people/" }
+  - { name: "Research",    url: "/research/" }
+  - { name: "Publication", url: "/publication/" }
+  - { name: "Project",     url: "/project/" }
+  - { name: "Contact",     url: "/contact/" }
+
+# ── Jekyll 빌드 설정 (수정 불필요) ─────────────────
+permalink: pretty
+sass:
+  style: compressed
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

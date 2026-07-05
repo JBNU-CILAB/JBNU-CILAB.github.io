@@ -1,0 +1,43 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+---
+
+<div class="page-head">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>연락처 · 오시는 길</h1>
+    <p class="lead">연구실 방문 및 문의는 아래 정보를 참고해 주세요.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="info-row">
+          <span class="k">주소</span>
+          <span>{{ site.contact.address_ko }}<br>{{ site.contact.address_detail }}</span>
+        </div>
+        <div class="info-row">
+          <span class="k">전화</span>
+          <span>{{ site.contact.phone }}</span>
+        </div>
+        <div class="info-row">
+          <span class="k">이메일</span>
+          <span><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></span>
+        </div>
+        <div class="info-row">
+          <span class="k">지도교수</span>
+          <span>{{ site.pi.name_ko }} ({{ site.pi.name_en }})</span>
+        </div>
+      </div>
+      <div>
+        <!-- 전북대학교 공과대학 위치 (Google Maps 임베드) -->
+        <iframe class="map-embed" loading="lazy" allowfullscreen
+          src="https://www.google.com/maps?q=전북대학교+공과대학+7호관&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+# Jekyll 빌드 산출물
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# 로컬 미리보기 (배포 불필요)
+_preview/
+
+# 의존성 잠금 (GitHub Pages는 자체 버전을 사용)
+Gemfile.lock
+
+# OS / 편집기
+.DS_Store
+Thumbs.db
+*.swp

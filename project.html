@@ -1,0 +1,29 @@
+---
+layout: default
+title: Project
+permalink: /project/
+---
+
+<div class="page-head">
+  <div class="container">
+    <span class="eyebrow">Project</span>
+    <h1>연구 프로젝트</h1>
+    <p class="lead">연구실에서 수행 중이거나 완료한 연구 과제입니다.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    {% for pj in site.data.projects %}
+    <div class="proj-item">
+      <h3>
+        {{ pj.title }}
+        {% if pj.status == "ongoing" %}<span class="status ongoing">진행중</span>
+        {% else %}<span class="status completed">완료</span>{% endif %}
+      </h3>
+      <p class="proj-meta">{{ pj.period }} · {{ pj.funder }}</p>
+      <p>{{ pj.summary }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
