@@ -3,7 +3,7 @@
 
 title: "CILAB"
 subtitle: "Compiler Intelligence Lab"
-description: "전북대학교 컴파일러 인텔리전스 연구실 — 컴파일러 최적화, 웹 엔진, AI 컴파일러"
+description: "전북대학교 컴파일러 인텔리전스 연구실 — 웹 엔진, LLM 응용 시스템, AI 컴파일러"
 lang: ko
 
 # 배포 주소 (org 대표 사이트이므로 baseurl은 비워둡니다)
