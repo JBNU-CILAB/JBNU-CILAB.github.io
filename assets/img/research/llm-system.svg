@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" role="img" aria-label="LLM 응용 시스템 연구 개요: 작업 자동화와 지능형 서비스를 목표로, 오픈 웨이트 LLM과 사용자 요청을 프롬프트 설계, 도구 연동, 에이전트로 구성된 시스템으로 처리합니다.">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b636e"/>
+    </marker>
+  </defs>
+
+  <style>
+    text { font-family: Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+    .t-main  { font-size: 15px; font-weight: 700; fill: #1a1d21; }
+    .t-sub   { font-size: 11px; fill: #5b636e; }
+    .t-title { font-size: 17px; font-weight: 800; fill: #1a1d21; }
+    .t-stage { font-size: 13px; font-weight: 700; fill: #1f4e8c; }
+    .t-stage-sub { font-size: 10px; fill: #5b636e; }
+    .t-goal  { font-size: 15px; font-weight: 700; fill: #1f4e8c; }
+    .t-goal-sub { font-size: 11px; fill: #5b636e; }
+    .t-label { font-size: 11px; font-weight: 700; fill: #5b636e; letter-spacing: 1px; }
+    .box     { fill: #ffffff; stroke: #e6e8ec; stroke-width: 1.5; }
+    .stage   { fill: #eaf1fa; }
+    .goal    { fill: #eaf1fa; }
+    .flow    { stroke: #5b636e; stroke-width: 1.5; fill: none; }
+  </style>
+
+  <!-- 연구 목표 (상단 중앙) -->
+  <text class="t-label" x="330" y="30" text-anchor="middle">연구 목표</text>
+  <rect class="goal" x="130" y="42" width="190" height="56" rx="12"/>
+  <text class="t-goal"     x="225" y="66" text-anchor="middle">🔁 작업 자동화</text>
+  <text class="t-goal-sub" x="225" y="85" text-anchor="middle">반복 업무의 지능형 처리</text>
+
+  <rect class="goal" x="340" y="42" width="190" height="56" rx="12"/>
+  <text class="t-goal"     x="435" y="66" text-anchor="middle">🧩 지능형 서비스</text>
+  <text class="t-goal-sub" x="435" y="85" text-anchor="middle">LLM 기반 도구 · 서비스 개발</text>
+
+  <!-- 입력 -->
+  <rect class="box" x="30" y="160" width="180" height="64" rx="12"/>
+  <g><!-- LLM 배지 -->
+    <rect x="46" y="178" width="28" height="28" rx="5" fill="#1f4e8c"/>
+    <text x="60" y="196" text-anchor="middle" font-size="9.5" font-weight="800" fill="#ffffff">LLM</text>
+  </g>
+  <text class="t-main" x="88" y="188">오픈 웨이트 LLM</text>
+  <text class="t-sub"  x="88" y="206">공개 가중치 언어 모델</text>
+
+  <rect class="box" x="30" y="280" width="180" height="64" rx="12"/>
+  <g><!-- 요청 배지 -->
+    <rect x="46" y="298" width="28" height="28" rx="5" fill="#eaf1fa"/>
+    <text x="60" y="317" text-anchor="middle" font-size="14">📄</text>
+  </g>
+  <text class="t-main" x="88" y="308">사용자 요청</text>
+  <text class="t-sub"  x="88" y="326">작업 지시 · 데이터</text>
+
+  <line class="flow" x1="214" y1="192" x2="262" y2="192" marker-end="url(#arrow)"/>
+  <line class="flow" x1="214" y1="312" x2="262" y2="312" marker-end="url(#arrow)"/>
+
+  <!-- LLM 응용 시스템 -->
+  <rect x="270" y="140" width="360" height="240" rx="14" fill="#ffffff" stroke="#1f4e8c" stroke-width="1.5"/>
+  <text class="t-title" x="450" y="173" text-anchor="middle">🤖 LLM 응용 시스템</text>
+  <text class="t-sub"   x="450" y="193" text-anchor="middle">오픈 웨이트 LLM 기반 자동화 파이프라인</text>
+
+  <rect class="stage" x="294" y="220" width="96" height="56" rx="10"/>
+  <text class="t-stage" x="342" y="245" text-anchor="middle">Prompting</text>
+  <text class="t-stage-sub" x="342" y="263" text-anchor="middle">프롬프트 설계</text>
+
+  <rect class="stage" x="402" y="220" width="96" height="56" rx="10"/>
+  <text class="t-stage" x="450" y="245" text-anchor="middle">Tool Use</text>
+  <text class="t-stage-sub" x="450" y="263" text-anchor="middle">도구 · API 연동</text>
+
+  <rect class="stage" x="510" y="220" width="96" height="56" rx="10"/>
+  <text class="t-stage" x="558" y="245" text-anchor="middle">Agent</text>
+  <text class="t-stage-sub" x="558" y="263" text-anchor="middle">작업 계획 · 실행</text>
+
+  <line class="flow" x1="392" y1="248" x2="400" y2="248" marker-end="url(#arrow)"/>
+  <line class="flow" x1="500" y1="248" x2="508" y2="248" marker-end="url(#arrow)"/>
+
+  <!-- 피드백 루프 -->
+  <path class="flow" stroke-dasharray="4 4" d="M558,280 C558,318 450,318 450,284" marker-end="url(#arrow)"/>
+  <text class="t-stage-sub" x="504" y="332" text-anchor="middle">결과 평가 · 피드백 개선</text>
+</svg>

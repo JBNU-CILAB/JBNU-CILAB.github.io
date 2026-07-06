@@ -29,12 +29,13 @@ title: Home
     <h2 class="section-title">연구 분야</h2>
     <div class="grid grid-3">
       {% for r in site.data.research %}
-      <div class="card">
+      <a class="card card-link" href="{{ '/research/' | relative_url }}#{{ r.id }}">
         <div class="icon">{{ r.icon }}</div>
         <h3>{{ r.title }}</h3>
         <p class="card-sub">{{ r.title_en }}</p>
         <p>{{ r.desc }}</p>
-      </div>
+        <span class="card-more">자세히 보기 →</span>
+      </a>
       {% endfor %}
     </div>
   </div>

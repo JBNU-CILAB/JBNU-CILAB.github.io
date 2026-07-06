@@ -125,6 +125,28 @@ h2.section-title { font-size: 26px; margin: 0 0 28px; letter-spacing: -.3px; }
 .card h3 { margin: 0 0 4px; font-size: 19px; }
 .card .card-sub { color: var(--text-muted); font-size: 13px; margin: 0 0 12px; }
 .card p { margin: 0; color: var(--text-muted); font-size: 15px; }
+.card-link { display: block; color: var(--text); }
+.card-link:hover { text-decoration: none; }
+.card-link .card-more {
+  display: inline-block; margin-top: 14px;
+  color: var(--accent); font-weight: 600; font-size: 14px;
+}
+
+/* ── Research 상세 섹션 ───────────────────────── */
+.research-detail { padding: 40px 0; scroll-margin-top: 90px; }
+.research-detail + .research-detail { border-top: 1px solid var(--line); }
+.research-detail h2 { font-size: 24px; margin: 0 0 18px; letter-spacing: -.3px; }
+.research-detail p { margin: 0 0 14px; word-break: keep-all; }
+.research-fig {
+  background: var(--bg); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 28px; margin: 8px 0 22px;
+}
+.research-fig img { width: 100%; max-width: 760px; margin: 0 auto; }
+.keyword-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.keyword-tag {
+  font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent);
+}
 
 /* ── People (멤버) ────────────────────────────── */
 .group-title {
