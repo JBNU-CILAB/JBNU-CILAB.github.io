@@ -308,7 +308,7 @@ h2.section-title { font-size: 26px; margin: 0 0 28px; letter-spacing: -.3px; }
     max-height: 0; overflow: hidden; opacity: 0;
     transition: max-height .28s ease, opacity .2s ease;
   }
-  .nav-links.open { max-height: 340px; opacity: 1; }
+  .nav-links.open { max-height: 480px; opacity: 1; }
   .nav-links a { padding: 12px 8px; border-radius: 8px; }
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .news-item { flex-wrap: wrap; row-gap: 4px; }
