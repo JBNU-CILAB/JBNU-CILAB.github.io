@@ -7,23 +7,33 @@ permalink: /project/
 <div class="page-head">
   <div class="container">
     <span class="eyebrow">Project</span>
-    <h1>연구 프로젝트</h1>
-    <p class="lead">연구실에서 수행 중이거나 완료한 연구 과제입니다.</p>
+    <h1>프로젝트</h1>
+    <p class="lead">연구실이 참여하는 오픈소스와 자체 개발 프로젝트입니다. 모든 프로젝트는 GitHub에서 진행됩니다.</p>
   </div>
 </div>
 
 <section class="section">
   <div class="container">
-    {% for pj in site.data.projects %}
-    <div class="proj-item">
-      <h3>
-        {{ pj.title }}
-        {% if pj.status == "ongoing" %}<span class="status ongoing">진행중</span>
-        {% else %}<span class="status completed">완료</span>{% endif %}
-      </h3>
-      <p class="proj-meta">{{ pj.period }} · {{ pj.funder }}</p>
-      <p>{{ pj.summary }}</p>
-    </div>
+    {% assign groups = "opensource,cilab" | split: "," %}
+    {% assign labels = "참여 오픈소스 프로젝트 · Open Source,자체 개발 프로젝트 · CILAB Projects" | split: "," %}
+    {% for g in groups %}
+      {% assign projects = site.data.projects | where: "group", g %}
+      {% if projects.size > 0 %}
+        <div class="group-title">{{ labels[forloop.index0] }}</div>
+        <div class="grid grid-3">
+          {% for pj in projects %}
+          <a class="card card-link" href="{{ pj.github }}" target="_blank" rel="noopener">
+            <div class="proj-head">
+              <h3>{{ pj.name }}</h3>
+              <span class="keyword-tag">{{ pj.tag }}</span>
+            </div>
+            <p class="card-sub">{{ pj.subtitle }}</p>
+            <p>{{ pj.desc }}</p>
+            <span class="card-more">GitHub에서 보기 →</span>
+          </a>
+          {% endfor %}
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
 </section>

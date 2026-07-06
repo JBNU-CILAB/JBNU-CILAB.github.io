@@ -1,22 +1,77 @@
-# ── 연구 프로젝트 ──────────────────────────────────
-# 진행 중/완료된 연구 과제를 적습니다.
-# status: ongoing (진행중) / completed (완료)
+# ── 프로젝트 (GitHub 저장소) ────────────────────────
+# group: opensource (참여 오픈소스) / cilab (자체 개발)
+# tag:   연구 분야 연결 태그 (웹 엔진 / LLM 응용 시스템 / AI 컴파일러 / 산학협력 등)
 
-- title: "AI 컴파일러 최적화 프레임워크 개발"
-  period: "2024 ~ 현재"
-  status: ongoing
-  funder: "한국연구재단 (NRF)"
-  summary: "딥러닝 모델을 다양한 하드웨어에 효율적으로 컴파일하기 위한 최적화 기법 연구."
+# ── 참여 오픈소스 프로젝트 ──
+- group: opensource
+  name: "Escargot"
+  subtitle: "경량 자바스크립트 엔진"
+  tag: "웹 엔진"
+  github: "https://github.com/Samsung/escargot"
+  desc: >-
+    메모리가 제한된 환경을 위해 설계된 경량 자바스크립트 엔진입니다.
+    최신 ECMAScript 표준을 지원하면서도 적은 메모리로 동작해 모바일·IoT 등
+    임베디드 환경에서 활용됩니다. 연구실은 Escargot을 대상으로 엔진 내부 분석과
+    성능·메모리 최적화 연구를 수행합니다.
 
-- title: "차세대 웹 엔진 성능 최적화"
-  period: "2023 ~ 2025"
-  status: ongoing
-  funder: "정보통신기획평가원 (IITP)"
-  summary: "웹 브라우저 자바스크립트 엔진의 JIT 컴파일 및 실행 성능 향상 연구."
+- group: opensource
+  name: "Walrus"
+  subtitle: "경량 웹어셈블리 런타임"
+  tag: "웹 엔진"
+  github: "https://github.com/Samsung/walrus"
+  desc: >-
+    WebAssembly 표준을 완전히 지원하는 경량 런타임입니다. 인터프리터 기반 실행을
+    제공하며, JIT 컴파일 도입 등 실행 성능 최적화가 진행되고 있습니다.
+    연구실은 이 엔진을 기반으로 웹어셈블리 실행 성능 최적화 연구를 수행합니다.
 
-# ── 새 프로젝트 추가 예시 ──
-# - title: "프로젝트 제목"
-#   period: "2026 ~ 2028"
-#   status: ongoing
-#   funder: "지원기관"
-#   summary: "프로젝트 한 줄 요약."
+- group: opensource
+  name: "lwnode"
+  subtitle: "경량 Node.js"
+  tag: "웹 엔진"
+  github: "https://github.com/Samsung/lwnode"
+  desc: >-
+    Escargot 엔진 위에서 동작하는 메모리 효율적인 Node.js 구현체입니다.
+    모바일, 스마트워치, TV 같은 소비자 기기에서 Node.js 애플리케이션을
+    구동하는 것을 목표로 합니다.
+
+# ── 자체 개발 프로젝트 ──
+- group: cilab
+  name: "Escargot Review Bot"
+  subtitle: "LLM 기반 코드 리뷰 시스템"
+  tag: "LLM 응용 시스템"
+  github: "https://github.com/JBNU-CILAB/escargot-review-bot"
+  desc: >-
+    오픈소스 엔진 Escargot의 Pull Request를 자동 리뷰하는 셀프호스팅 AI 시스템입니다.
+    결함·리팩터링·컴파일러·스타일 네 가지 관점의 LLM 리뷰 패스를 수행하고,
+    Judge 단계가 중복 의견을 통합해 PR에 인라인 코멘트를 답니다.
+    로컬 LLM(Ollama) 기반이라 외부 API 없이 운영할 수 있습니다.
+
+- group: cilab
+  name: "JCodeQuest"
+  subtitle: "LLM 기반 코딩 학습 플랫폼"
+  tag: "LLM 응용 시스템"
+  github: "https://github.com/JBNU-CILAB/JCodeQuest"
+  desc: >-
+    알고리즘 문제 풀이를 게임처럼 즐기는 교육용 플랫폼입니다. LLM 기반 자동 문제 출제,
+    3-judge LLM 앙상블 채점, 실시간 코드 배틀, 자동 표절 검사를 제공합니다.
+    전북대학교 SW경진대회 출품작입니다.
+
+- group: cilab
+  name: "Iron Device Simulator"
+  subtitle: "스피커 보호 알고리즘 시뮬레이터"
+  tag: "산학협력"
+  github: "https://github.com/JBNU-CILAB/Iron-Device-Simulator"
+  desc: >-
+    아이언디바이스의 스피커 보호 알고리즘 라이브러리를 시연하는 웹 기반 대시보드입니다.
+    오디오 파일이나 실시간 마이크 입력으로부터 스피커 온도와 진동판 변위를
+    실시간 시각화합니다. 전북대학교 SW 산학협력 과제로 수행했습니다.
+
+- group: cilab
+  name: "demucs-lite"
+  subtitle: "음원 분리 모델 경량화"
+  tag: "AI 컴파일러"
+  github: "https://github.com/JBNU-CILAB/demucs-lite"
+  desc: >-
+    음원 분리 모델 Demucs를 모바일 기기에서 실행하기 위한 경량화·최적화 프로젝트입니다.
+    FP16·INT8 양자화와 오디오 청킹 처리를 통해 모바일 NPU(Qualcomm)에서 실행에
+    성공했으며, 실제 기기에서 1초 분량 오디오를 약 100ms에 추론합니다.
