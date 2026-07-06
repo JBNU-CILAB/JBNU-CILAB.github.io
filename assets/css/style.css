@@ -58,7 +58,7 @@ img { max-width: 100%; display: block; }
   transition: background .15s, color .15s;
 }
 .nav-github:hover { background: var(--bg-alt); color: var(--accent); text-decoration: none; }
-.nav-github svg { width: 20px; height: 20px; display: block; }
+.nav-github svg { width: 18px; height: 18px; display: block; }
 
 .nav-links { display: flex; gap: 6px; }
 .nav-links a {
