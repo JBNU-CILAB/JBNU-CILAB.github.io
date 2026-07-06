@@ -39,6 +39,7 @@ nav:
   - { name: "Research",    url: "/research/" }
   - { name: "Publication", url: "/publication/" }
   - { name: "Project",     url: "/project/" }
+  - { name: "News",        url: "/news/" }
   - { name: "Contact",     url: "/contact/" }
 
 # ── Jekyll 빌드 설정 (수정 불필요) ─────────────────

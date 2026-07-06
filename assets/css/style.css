@@ -148,6 +148,24 @@ h2.section-title { font-size: 26px; margin: 0 0 28px; letter-spacing: -.3px; }
   background: var(--accent-soft); color: var(--accent);
 }
 
+/* ── News (소식) ─────────────────────────────── */
+.news-item {
+  display: flex; gap: 14px; align-items: baseline;
+  padding: 14px 0; border-bottom: 1px solid var(--line);
+}
+.news-date {
+  flex-shrink: 0; min-width: 88px;
+  font-size: 13.5px; font-weight: 700; color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.news-badge {
+  flex-shrink: 0; font-size: 12px; font-weight: 600;
+  padding: 3px 10px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent); white-space: nowrap;
+}
+.news-text { margin: 0; word-break: keep-all; }
+.news-note { margin: 4px 0 0; font-size: 13.5px; color: var(--text-muted); word-break: keep-all; }
+
 /* ── People (멤버) ────────────────────────────── */
 .group-title {
   font-size: 15px; font-weight: 700; color: var(--text-muted);
@@ -286,6 +304,8 @@ h2.section-title { font-size: 26px; margin: 0 0 28px; letter-spacing: -.3px; }
   .nav-links.open { max-height: 340px; opacity: 1; }
   .nav-links a { padding: 12px 8px; border-radius: 8px; }
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .news-item { flex-wrap: wrap; row-gap: 4px; }
+  .news-body { flex-basis: 100%; }
   .section { padding: 52px 0; }
   .hero { padding: 64px 0 56px; }
   .page-head { padding: 40px 0 4px; }
