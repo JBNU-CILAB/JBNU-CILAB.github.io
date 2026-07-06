@@ -1,49 +1,45 @@
 # ── 연구실 멤버 ────────────────────────────────────
 # 멤버를 추가하려면 아래 형식으로 항목을 복사해 붙여넣으세요.
-# photo: assets/img/members/ 폴더에 이미지를 넣고 파일명만 적으면 됩니다.
-#        (사진이 없으면 자동으로 이니셜 아바타가 표시됩니다)
 # group: phd / ms / undergrad / alumni 중 하나 (표시 구역이 나뉩니다)
+# name_en: 비워두면 영문명 줄이 표시되지 않습니다.
 
 # ── 박사과정 ──
-- name_ko: "홍길동"
-  name_en: "Gildong Hong"
-  group: phd
-  role: "박사과정"
-  email: "gildong@jbnu.ac.kr"
-  photo: ""
-  interests: "AI 컴파일러, 코드 최적화"
+# (현재 없음 — 추가 시 아래 형식 사용)
+# - name_ko: "이름"
+#   name_en: ""
+#   group: phd
+#   email: ""
+#   interests: ""
 
 # ── 석사과정 ──
-- name_ko: "김철수"
-  name_en: "Cheolsu Kim"
+- name_ko: "권순범"
+  name_en: ""
   group: ms
-  role: "석사과정"
-  email: "cheolsu@jbnu.ac.kr"
-  photo: ""
-  interests: "웹 엔진, JIT 컴파일"
-
-- name_ko: "이영희"
-  name_en: "Younghee Lee"
-  group: ms
-  role: "석사과정"
-  email: "younghee@jbnu.ac.kr"
-  photo: ""
-  interests: "컴파일러 최적화"
+  email: "cool5715@jbnu.ac.kr"
+  interests: "웹 엔진, AI 활용 최적화"
 
 # ── 학부연구생 ──
-- name_ko: "박민준"
-  name_en: "Minjun Park"
+- name_ko: "권민석"
+  name_en: ""
   group: undergrad
-  role: "학부연구생"
-  email: ""
-  photo: ""
-  interests: "프로그래밍 언어"
+  email: "seg082911@gmail.com"
+  interests: "LLM 응용 시스템, 프로파일링 툴 개발"
+
+- name_ko: "박현명"
+  name_en: ""
+  group: undergrad
+  email: "202412954@jbnu.ac.kr"
+  interests: "LLM 응용 시스템"
+
+- name_ko: "양현성"
+  name_en: ""
+  group: undergrad
+  email: "hyeonseongyang09@gmail.com"
+  interests: "웹 엔진, LLM 응용 시스템"
 
 # ── 졸업생 (Alumni) ──
 # - name_ko: "졸업생 이름"
 #   name_en: "Alumni Name"
 #   group: alumni
-#   role: "석사 졸업 (2025)"
 #   email: ""
-#   photo: ""
 #   interests: "현재 소속: OO기업"
