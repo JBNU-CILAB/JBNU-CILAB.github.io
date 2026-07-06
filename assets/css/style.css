@@ -50,6 +50,16 @@ img { max-width: 100%; display: block; }
 .brand-mark { font-weight: 800; font-size: 20px; letter-spacing: .5px; color: var(--text); }
 .brand-sub { font-size: 11px; color: var(--text-muted); letter-spacing: .3px; }
 
+.header-right { display: flex; align-items: center; }
+.nav-divider { width: 1px; height: 20px; background: var(--line); margin: 0 10px; }
+.nav-github {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 8px; border-radius: 8px; color: var(--text);
+  transition: background .15s, color .15s;
+}
+.nav-github:hover { background: var(--bg-alt); color: var(--accent); text-decoration: none; }
+.nav-github svg { width: 20px; height: 20px; display: block; }
+
 .nav-links { display: flex; gap: 6px; }
 .nav-links a {
   color: var(--text); font-size: 15px; font-weight: 500;
@@ -300,6 +310,7 @@ h2.section-title { font-size: 26px; margin: 0 0 28px; letter-spacing: -.3px; }
 }
 @media (max-width: 640px) {
   .nav-toggle { display: flex; }
+  .nav-divider { display: none; }
   .nav-links {
     position: absolute; top: 66px; left: 0; right: 0;
     flex-direction: column; gap: 0;
