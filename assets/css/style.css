@@ -177,6 +177,16 @@ h2.section-title { font-size: 26px; margin: 0 0 28px; letter-spacing: -.3px; }
   background: var(--bg); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 22px 24px;
 }
+.avatar-fallback {
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-weight: 700; background: var(--accent-soft); color: var(--accent);
+}
+.member .avatar-fallback { width: 64px; height: 64px; font-size: 24px; margin-bottom: 14px; }
+.avatar-c0 { background: #eaf1fa; color: #1f4e8c; }  /* 블루 (포인트 컬러) */
+.avatar-c1 { background: #e6f4ea; color: #2f7d4f; }  /* 그린 */
+.avatar-c2 { background: #fdf3e3; color: #a96b1f; }  /* 앰버 */
+.avatar-c3 { background: #f0ecfa; color: #6d4fc1; }  /* 퍼플 */
+.avatar-c4 { background: #e5f4f4; color: #237a7a; }  /* 틸 */
 .member .m-name { font-weight: 700; font-size: 17px; }
 .member .m-name-en { color: var(--text-muted); font-size: 13px; }
 .member .m-interest { color: var(--text-muted); font-size: 13px; margin-top: 8px; }

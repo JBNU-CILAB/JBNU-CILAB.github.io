@@ -46,6 +46,7 @@ permalink: /people/
     <!-- 학생 그룹별 -->
     {% assign groups = "phd,ms,undergrad,alumni" | split: "," %}
     {% assign labels = "박사과정 · Ph.D. Students,석사과정 · M.S. Students,학부연구생 · Undergraduate,졸업생 · Alumni" | split: "," %}
+    {% assign avatar_i = 0 %}
     {% for g in groups %}
       {% assign members = site.data.members | where: "group", g %}
       {% if members.size > 0 or g == "phd" %}
@@ -53,6 +54,9 @@ permalink: /people/
         <div class="grid grid-4">
           {% for m in members %}
           <div class="member">
+            {% assign avatar_c = avatar_i | modulo: 5 %}
+            <div class="avatar-fallback avatar-c{{ avatar_c }}">{{ m.name_ko | slice: 0 }}</div>
+            {% assign avatar_i = avatar_i | plus: 1 %}
             <div class="m-name">{{ m.name_ko }}</div>
             {% if m.name_en and m.name_en != "" %}<div class="m-name-en">{{ m.name_en }}</div>{% endif %}
             {% if m.interests %}<div class="m-interest">{{ m.interests }}</div>{% endif %}
