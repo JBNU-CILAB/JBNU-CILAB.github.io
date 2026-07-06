@@ -163,7 +163,7 @@ h2.section-title { font-size: 26px; margin: 0 0 28px; letter-spacing: -.3px; }
   padding: 3px 10px; border-radius: 999px;
   background: var(--accent-soft); color: var(--accent); white-space: nowrap;
 }
-.news-text { margin: 0; word-break: keep-all; }
+.news-text { margin: 0; word-break: keep-all; font-weight: 600; font-size: 16.5px; }
 .news-note { margin: 4px 0 0; font-size: 13.5px; color: var(--text-muted); word-break: keep-all; }
 
 /* ── People (멤버) ────────────────────────────── */
