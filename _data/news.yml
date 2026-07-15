@@ -5,6 +5,8 @@
 # - badge: 종류 뱃지 (이모지 + 단어) — 예: 🏆 수상 / 📢 학회 / 💼 인턴십 / 📌 공지 / 🎓 졸업 / 👋 신입
 # - text:  소식 내용 (단답형)
 # - note:  부가 설명 한 줄 (선택 — 논문 제목 등)
+# - attachment:       첨부 이미지 경로 (선택 — 클릭 시 라이트박스로 표시. 상장 스캔본 등)
+# - attachment_label: 첨부 링크에 표시할 문구 (선택 — 기본값 "첨부 보기")
 
 - year: 2026
   date: "2026.07–08"
@@ -21,6 +23,8 @@
   badge: "🏆 수상"
   text: "양현성 학생, 한국컴퓨터종합학술대회(KCC 2026) 우수논문상 수상"
   note: "논문: Native Stack 기반 웹어셈블리 인터프리터에서의 Tail Call Optimization 설계 및 구현"
+  attachment: /assets/img/awards/kcc2026-best-paper.jpg
+  attachment_label: "상장 보기"
 
 - year: 2026
   date: "2026.06"
@@ -37,6 +41,14 @@
   date: "2026.02"
   badge: "🎓 졸업"
   text: "권순범, 이재헌 학생 학부 졸업"
+
+- year: 2025
+  date: "2025.12"
+  badge: "🏆 수상"
+  text: "SW중심대학사업단 산학협력프로젝트 성과전시회 최우수상 수상"
+  note: "프로젝트: 오픈소스 경량 웹 엔진 개발 (이재헌, 권순범, 권민석)"
+  attachment: /assets/img/awards/swuniv2025-grand-prize.jpg
+  attachment_label: "상장 보기"
 
 - year: 2025
   date: "2025.12"

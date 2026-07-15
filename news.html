@@ -24,9 +24,50 @@ permalink: /news/
         <div class="news-body">
           <p class="news-text">{{ n.text }}</p>
           {% if n.note %}<p class="news-note">{{ n.note }}</p>{% endif %}
+          {% if n.attachment %}
+          <a class="news-attachment" href="{{ n.attachment | relative_url }}"
+             data-lightbox data-alt="{{ n.text }}" target="_blank" rel="noopener">
+            📄 {{ n.attachment_label | default: "첨부 보기" }}
+          </a>
+          {% endif %}
         </div>
       </div>
       {% endfor %}
     {% endfor %}
   </div>
 </section>
+
+<!-- 첨부 이미지 라이트박스 (JS 미동작 시에는 링크가 새 탭으로 열림) -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" aria-label="닫기">&times;</button>
+  <img src="" alt="">
+</div>
+
+<script>
+  (function () {
+    var lb = document.getElementById('lightbox');
+    var img = lb.querySelector('img');
+
+    document.querySelectorAll('a[data-lightbox]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        img.src = a.href;
+        img.alt = a.dataset.alt || '첨부 이미지';
+        lb.hidden = false;
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function close() {
+      lb.hidden = true;
+      img.src = '';
+      document.body.style.overflow = '';
+    }
+    lb.addEventListener('click', function (e) {
+      if (e.target !== img) close();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !lb.hidden) close();
+    });
+  })();
+</script>
