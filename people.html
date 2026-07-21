@@ -59,7 +59,7 @@ permalink: /people/
             {% assign avatar_i = avatar_i | plus: 1 %}
             <div class="m-name">{{ m.name_ko }}</div>
             {% if m.name_en and m.name_en != "" %}<div class="m-name-en">{{ m.name_en }}</div>{% endif %}
-            {% if m.interests %}<div class="m-interest">{{ m.interests }}</div>{% endif %}
+            {% if m.interests and m.interests != "" %}<div class="m-interest">{{ m.interests }}</div>{% endif %}
             {% if m.email and m.email != "" %}<div class="m-email">{% include email.html address=m.email %}</div>{% endif %}
           </div>
           {% endfor %}

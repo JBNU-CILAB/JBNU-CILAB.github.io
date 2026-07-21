@@ -37,6 +37,18 @@
   email: "hyeonseongyang09@gmail.com"
   interests: "웹 엔진, LLM 응용 시스템"
 
+- name_ko: "김현준"
+  name_en: ""
+  group: undergrad
+  email: "hj011007@naver.com"
+  interests: "웹 엔진"
+
+- name_ko: "유인상"
+  name_en: ""
+  group: undergrad
+  email: "dkdls388@gmail.com"
+  interests: "웹 엔진"
+
 # ── 졸업생 (Alumni) ──
 # - name_ko: "졸업생 이름"
 #   name_en: "Alumni Name"
